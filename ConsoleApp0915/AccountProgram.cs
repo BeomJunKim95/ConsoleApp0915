@@ -30,6 +30,11 @@ namespace ConsoleApp0915
 		}
 		public void Deposit() //2. 입금
 		{
+			if(account == null)
+			{
+				Console.WriteLine("계좌개설을 먼저 해주십시오.");
+				return;
+			}
 			Console.Write("입금하실 금액은?: ");
 			money = int.Parse(Console.ReadLine());
 			account.InputMoney(money);
