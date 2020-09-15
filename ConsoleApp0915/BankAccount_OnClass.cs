@@ -8,7 +8,7 @@ namespace ConsoleApp0915
 {
 	class BankAccount_OnClass
 	{   //메서드 바깥에 있어야 멤버변수 메서드 안에 있으면 지역변수
-		private static double interest = 0.2;  //이자율
+		private static double interest = 0.3;  //이자율
 		private string accNum;    //계좌번호
 		private string name;      //예금주명
 		private int balance;      //잔액  
