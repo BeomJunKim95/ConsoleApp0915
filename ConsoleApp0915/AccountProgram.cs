@@ -69,7 +69,8 @@ namespace ConsoleApp0915
 						manager.MakeAccount(); break;
 					case 2:
 						manager.Deposit(); break;
-					case 3:break;
+					case 3:
+						manager.Widthdraw(); break;
 					case 4:break;
 						//return을 쓰는이유는 break를 쓰면 스위치문만 나가기 때문에 while문의 무한루프를 빠져나갈수 없음
 					case 5:return;
