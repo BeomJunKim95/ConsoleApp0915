@@ -86,7 +86,8 @@ namespace ConsoleApp0915
 		public static void	SetInterest(double interest) //정적메서드 
 		{
 			BankAccount_OnClass.interest = interest;
-			//balance += 10;  // 오류가 나는 이유는 정적 메서드는 정적변수만 가능 인스턴스 메서드, 변수 사용불가
+			//balance += 10;  // 오류가 나는 이유는 정적 메서드는 정적변수만  호출가능 인스턴스 메서드, 변수는 사용불가
+							  // 정적은 정적끼리
 		}
 		#endregion
 	}

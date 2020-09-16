@@ -62,12 +62,14 @@ namespace ConsoleApp0915
 			AccountManager manager = new AccountManager();
 			Console.WriteLine(manager.ToString());
 
-			int choice; // 반복문 밖에 선언
+			int choice; // 반복문 밖에 선언 => 리소스 소모를 줄이기 위해 
+			
 			while (true)
 			{
 				manager.PrintMenu();
 				Console.Write("선택 : ");
-				choice = int.Parse(Console.ReadLine()); //int choice 반복문 안에 있어 한번돌때마다 계속 선언 되기 때문에 while문 밖에 선언해주는게 좋음(리소스 소모를 줄일수있음)
+				choice = int.Parse(Console.ReadLine()); //int choice 반복문 안에 있어 한번돌때마다 계속 선언 되기 때문에 
+														 //while문 밖에 선언해주는게 좋음(리소스 소모를 줄일수있음)
 				switch(choice)
 				{
 					case 1:
